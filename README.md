@@ -49,6 +49,8 @@ Accuracy: 68.67%
 Recall: 56.89%
 Precision: 69.39%
 F1 Score: 62.52%
+
+
 RV Dataset
 To train and evaluate the model using the RV (Revised Vulnerabilities) dataset, use the following command:
 
@@ -72,6 +74,7 @@ CUDA_VISIBLE_DEVICES=0,1,5 python run.py \
   --max_grad_norm 1.0 \
   --evaluate_during_training \
   --seed 123456
+  
 Model Configuration and Hyperparameters
 Model: RoBERTa with UnixCoder
 Tokenizer: microsoft/unixcoder-base for Devign, local path for RV
@@ -89,10 +92,9 @@ Random Seed: 123456
 Results
 For the Devign dataset, the following evaluation metrics were obtained:
 
-Accuracy: 68.67%
-Recall: 56.89%
-Precision: 69.39%
-F1 Score: 62.52%
+ {'Acc': 0.9155672823218998, 'Recall': 0.39035087719298245, 'Precision': 0.6267605633802817, 'F1': 0.4810810810810811}
+
+
 For the RV dataset, evaluation results will be printed during training.
 
 Usage
