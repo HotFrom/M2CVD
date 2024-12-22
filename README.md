@@ -6,8 +6,8 @@ Python 3.8
 PyTorch 1.9 or above
 Transformers (HuggingFace)
 Datasets and other dependencies can be installed via:
-bash
-复制代码
+
+
 pip install -r requirements.txt
 Datasets
 Devign: A dataset specifically for vulnerability detection in code.
@@ -24,8 +24,7 @@ Model Training
 Devign Dataset
 To train and evaluate the model using the Devign dataset, use the following command:
 
-bash
-复制代码
+
 CUDA_VISIBLE_DEVICES=1,2,3 python run.py \
   --output_dir=./saved_models \
   --model_type=roberta \
@@ -53,8 +52,7 @@ F1 Score: 62.52%
 RV Dataset
 To train and evaluate the model using the RV (Revised Vulnerabilities) dataset, use the following command:
 
-bash
-复制代码
+
 CUDA_VISIBLE_DEVICES=0,1,5 python run.py \
   --output_dir=./saved_models \
   --epoch 5 \
